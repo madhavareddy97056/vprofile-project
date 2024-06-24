@@ -1,4 +1,4 @@
-FROM openjdk:11 AS base_img
+FROM openjdk:11 AS build_img
 LABEL "project"="Vpro_test"
 LABEL "NAME"="madhava"
 RUN apt update && apt install maven -y
