@@ -10,7 +10,7 @@ services:
     volumes:
       - mydbvol:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE_PASSWORD=vprodbpass
+      - MYSQL_DATABASE_PASSWORD=admin123
 
   vprocache01:
     image: memcached
