@@ -2,7 +2,7 @@ version: "3"
 services:
   vprodb:
     build: 
-      context: ./Docker-file/db
+      context: ./Docker-files/db
     container_name: vprodb
     image: madhavareddy97056/vdb
     ports:
@@ -26,7 +26,7 @@ services:
 
   vproapp:
     build: 
-      context: ./Docker-file/app
+      context: ./Docker-files/app
     container_name: vproapp
     image: madhavareddy97056/vapp
     ports:
@@ -36,7 +36,7 @@ services:
       
   vproweb:
     build: 
-      context: ./Docker-file/web
+      context: ./Docker-files/web
     container_name: vproweb
     image: madhavareddy97056/vweb
     ports:
